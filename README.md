@@ -19,24 +19,25 @@ minimize confusion, every "black key" is always considered a "white key with a
 sharp," and every "white key" consistently retains the same letter. While this
 naming method is still being explored, it provides a necessary starting point.
 
-#### 2. Harmoniously: The concept of what is considered "harmoniously" is
-influenced by tradition, culture, and personal taste, while also being rooted
-in natural harmonics. Different musical styles may perceive various
-combinations as more consonant than others. For instance, in BeBop-Jazz, a
-"plain tonic triad" might be viewed as dissonant, whereas a certain degree of
-"WCM dissonance" could be considered consonant within that genre. WCM harmonies
-are distinctly named and typically include the same tones, aside from octaves.
-The fundamental aspect of a "harmony" consists of a set of "consonants," tones
-that closely align with the lower overtones in air-carried sounds, such as the
-"perfect fifth" (third overtone) and the "major third" (fifth overtone). It is
-important to note that the second and fourth overtones are octaves of the
-fundamental, resulting in [1, (2,) 3, (4,) 5], which is identified as "tonic"
-or "root". For example, in the combination <c e g>, <c> serves as the
-fundamental, <e> represents the fifth overtone transposed two octaves down, and
-<g> is the third overtone transposed one octave down. Any other combinations of
-tones (or situations where octaving transforms one or more consonants into
-dissonants) are perceived as less consonant/tonic in WCM due to the natural
-laws governing sound transmission through air.
+#### 2. Harmoniously:
+The concept of what is considered "harmoniously" is influenced by tradition,
+culture, and personal taste, while also being rooted in natural harmonics.
+Different musical styles may perceive various combinations as more consonant
+than others. For instance, in BeBop-Jazz, a "plain tonic triad" might be viewed
+as dissonant, whereas a certain degree of "WCM dissonance" could be considered
+consonant within that genre. WCM harmonies are distinctly named and typically
+include the same tones, aside from octaves.  The fundamental aspect of a
+"harmony" consists of a set of "consonants," tones that closely align with the
+lower overtones in air-carried sounds, such as the "perfect fifth" (third
+overtone) and the "major third" (fifth overtone). It is important to note that
+the second and fourth overtones are octaves of the fundamental, resulting in
+[1, (2,) 3, (4,) 5], which is identified as "tonic" or "root". For example, in
+the combination \<c e g\>, \<c\> serves as the fundamental, \<e\> represents the
+fifth overtone transposed two octaves down, and \<g\> is the third overtone
+transposed one octave down. Any other combinations of tones (or situations
+where octaving transforms one or more consonants into dissonants) are perceived
+as less consonant/tonic in WCM due to the natural laws governing sound
+transmission through air.
 
 #### BUT: What if these overtones were not consonant? For example, if they were
 carried through a medium other than air, such as a different gas or liquid?
