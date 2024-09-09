@@ -82,6 +82,8 @@ at a minimum:
 - Set the "Voice Crossing Allowance": Users can specify whether voices are
   permitted to cross each other or if their ranges are constrained by
   surrounding voices.
+- Set the "Dissonance Level Range": Set between which minimum and 
+  maximum the dissonance of the harmonies may and must be.
 - Set the "Endpoint Dissonance Level": Users can determine how dissonant a
   resolution can be for it to be considered an "endpoint". This is essential
   when achieving full consonance is not feasible due to a higher "vertical
