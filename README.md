@@ -113,6 +113,7 @@ at a minimum:
   outcome. Options may include allowing movement to a "perfect consonant"
   (which is the most common approach in WCM), or any other scale tone — whether
   consonant or dissonant — or any other tone, or none at all.
+- Set the "Start and Endpoint": Define if the first and/or last harmony should have a predefined bass note, structure, or not.
 
 The program must facilitate the input of a melody along with its time unit
 using basic Lilypond syntax. It should generate a harmonic "accompaniment" in
