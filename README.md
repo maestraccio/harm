@@ -39,16 +39,16 @@ where octaving transforms one or more consonants into dissonants) are perceived
 as less consonant/tonic in WCM due to the natural laws governing sound
 transmission through air.
 
-#### BUT: What if these overtones were not consonant? For example, if they were
-carried through a medium other than air, such as a different gas or liquid?
-Consider a straight stick partially submerged in water; the part below the
-surface appears different from the portion above. This analogy can also apply
-to sound. Different tone combinations could be perceived as consonant, while
-the traditional "tonic" chord might be deemed dissonant. This concept inspired
-the idea of breaking free from the constraints of nature and creating new
-harmonies using the twelve available tones, defined by user-inputted
-consonant/dissonant criteria, while still adhering to the same — yet
-adaptable — composing rules.
+#### BUT:
+What if these overtones were not consonant? For example, if they were carried
+through a medium other than air, such as a different gas or liquid?  Consider a
+straight stick partially submerged in water; the part below the surface appears
+different from the portion above. This analogy can also apply to sound.
+Different tone combinations could be perceived as consonant, while the
+traditional "tonic" chord might be deemed dissonant. This concept inspired the
+idea of breaking free from the constraints of nature and creating new harmonies
+using the twelve available tones, defined by user-inputted consonant/dissonant
+criteria, while still adhering to the same — yet adaptable — composing rules.
 
 In the new program "harm," users must be able to perform the following actions
 at a minimum:
