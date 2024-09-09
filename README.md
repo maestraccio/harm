@@ -101,6 +101,11 @@ at a minimum:
   setting governs continuous harmonic movement if the melody tone remains
   unchanged. In "Choral mode," the harmony is adjusted only with each change in
   the melody tone.
+- Set the "Note Repetition": Set if a non-changing note is repeated in the next
+  harmony, is tied, is a Rest (if allowed) or based on "Rate of Simultaneous
+  Movements".
+- Set the "Rest Allowance": Define if every voice should always play a note, or 
+  if and how many rests are allowed.
 - Set the "Rate of Simultaneous Movements": The minimum value is "1", allowing
   only one tone to transition to a new tone (with dissonants taking precedence
   over consonants, based on their level of dissonance). The maximum value is
