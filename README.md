@@ -74,6 +74,9 @@ at a minimum:
   users must decide whether a dissonant note should resolve upwards or
   downwards into another interval, or not, and indicate whether that interval
   is or may be consonant or dissonant and at which level.
+- Set "Leading Tones Allowance": Set a minimum/maximum of "Leading Tones": Use 
+  a tone that is outside the selected scale to resolve by a half-step to a
+  scale tone, upwards, downwards, or both.
 - Set the "Jump": Users can define how far a single voice is allowed to jump up
   or down (crossing more than one scale tone) and whether it can transition to
   a consonant or dissonant interval (and to what level) from either a consonant
