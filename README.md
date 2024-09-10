@@ -7,8 +7,8 @@ This definition raises at least two questions: What exactly constitutes a
 "tone," and what qualifies as "harmoniously"?
 
 #### 1. Tone:
-Sound is defined as the "audible movement of air." A "tone," in contrast,
-refers to "sound at a measurable frequency." For practical reasons, "harm" will
+Sound is defined as the "audible movement of air." A "tone", in contrast,
+refers to "sound at a measurable frequency". For practical reasons, "harm" will
 utilize the commonly accepted twelve-semitone/chromatic evenly divided (or
 "well tempered") scale to define and label twelve distinct notes within each
 octave (referred to here as a "block of twelve semitones"), with each higher
@@ -16,7 +16,7 @@ octave having double the frequency of the lower one. The notes are identified
 using the seven letters of WCM, with sharps for the in-between semitones: [A,
 A♯, B, C, C♯, D, D♯, E, F, F♯, G, G♯]. This naming convention is arbitrary. To
 minimize confusion, every "black key" is always considered a "white key with a
-sharp," and every "white key" consistently retains the same letter. While this
+sharp", and every "white key" consistently retains the same letter. While this
 naming method is still being explored, it provides a necessary starting point.
 
 #### 2. Harmony:
@@ -27,7 +27,7 @@ than others. For instance, in BeBop-Jazz, a "plain tonic triad" might be viewed
 as dissonant, whereas a certain degree of "WCM dissonance" could be considered
 consonant within that genre. WCM harmonies are distinctly named and typically
 include the same tones, aside from octaves.  The fundamental aspect of a
-"harmony" consists of a set of "consonants," tones that closely align with the
+"harmony" consists of a set of "consonants", tones that closely align with the
 lower overtones in air-carried sounds, such as the "perfect fifth" (third
 overtone) and the "major third" (fifth overtone). It is important to note that
 the second and fourth overtones are octaves of the fundamental, resulting in
@@ -50,7 +50,7 @@ idea of breaking free from the constraints of nature and creating new harmonies
 using the twelve available tones, defined by user-inputted consonant/dissonant
 criteria, while still adhering to the same — yet adaptable — composing rules.
 
-In the new program "harm," users must be able to perform the following actions
+In the new program "harm", users must be able to perform the following actions
 at a minimum:
 
 - Insert a "Melody": Users can input a melody either manually through a text
