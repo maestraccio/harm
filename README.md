@@ -2,7 +2,7 @@
 ### Harm: A Counter-Traditional Harmonizing Program
 
 "Harmonies" are conventionally defined in Western Classical Music theory
-(abbreviated as WCM) as "simultaneously sounding tones in a harmonious manner."
+(abbreviated as WCM) as "simultaneously sounding tones in a harmonious manner".
 This definition raises at least two questions: What exactly constitutes a
 "tone," and what qualifies as "harmoniously"?
 
@@ -19,7 +19,7 @@ minimize confusion, every "black key" is always considered a "white key with a
 sharp," and every "white key" consistently retains the same letter. While this
 naming method is still being explored, it provides a necessary starting point.
 
-#### 2. Harmoniously:
+#### 2. Harmony:
 The concept of what is considered "harmoniously" is influenced by tradition,
 culture, and personal taste, while also being rooted in natural harmonics.
 Different musical styles may perceive various combinations as more consonant
@@ -57,9 +57,9 @@ at a minimum:
   prompt or by importing it from a file. The melody should include at least one
   note and a time signature, with Lilypond syntax recommended.
 - Set the "Scale": Traditionally, WCM scales consist of seven tones, with some
-  exceptions. In "harm," users can choose between three to twelve tones to
+  exceptions. In "harm", users can choose between three to twelve tones to
   create a scale that repeats in every octave, similar to WCM. The term "scale"
-  will be used instead of "tonality."
+  will be used instead of "tonality".
 - Set "Levels of Consonance and Dissonance": Users will specify which intervals
   in the scale are considered consonant (stable: no tendency to resolve) and
   which are deemed dissonant (unstable: tendency to resolve). WCM recognizes
@@ -74,7 +74,7 @@ at a minimum:
   users must decide whether a dissonant note should resolve upwards or
   downwards into another interval, or not, and indicate whether that interval
   is or may be consonant or dissonant and at which level.
-- Set "Leading Tones Allowance": Set a minimum/maximum of "Leading Tones": Use 
+- Set "Leading Tones Allowance": Set a minimum/maximum of "Leading Tones": Use
   a tone that is outside the selected scale to resolve by a half-step to a
   scale tone, upwards, downwards, or both.
 - Set the "Jump": Users can define how far a single voice is allowed to jump up
@@ -85,7 +85,7 @@ at a minimum:
 - Set the "Voice Crossing Allowance": Users can specify whether voices are
   permitted to cross each other or if their ranges are constrained by
   surrounding voices.
-- Set the "Dissonance Level Range": Set between which minimum and 
+- Set the "Dissonance Level Range": Set between which minimum and
   maximum the dissonance of the harmonies may and must be.
 - Set the "Endpoint Dissonance Level": Users can determine how dissonant a
   resolution can be for it to be considered an "endpoint". This is essential
@@ -104,12 +104,12 @@ at a minimum:
   permitted or mandatory per time unit. The time unit is defined by the melody
   provided by the user (or potentially by "mel" in the future). The "mandatory"
   setting governs continuous harmonic movement if the melody tone remains
-  unchanged. In "Choral mode," the harmony is adjusted only with each change in
+  unchanged. In "Choral mode", the harmony is adjusted only with each change in
   the melody tone.
 - Set the "Note Repetition": Set if a non-changing note is repeated in the next
-  harmony, is tied, is a Rest (if allowed) or based on "Rate of Simultaneous
+  harmony, is tied, is a Rest (if allowed), or based on "Rate of Simultaneous
   Movements".
-- Set the "Rest Allowance": Define if every voice should always play a note, or 
+- Set the "Rest Allowance": Define if every voice should always play a note, or
   if and how many rests are allowed.
 - Set the "Rate of Simultaneous Movements": The minimum value is "1", allowing
   only one tone to transition to a new tone (with dissonants taking precedence
@@ -123,7 +123,11 @@ at a minimum:
   outcome. Options may include allowing movement to a "perfect consonant"
   (which is the most common approach in WCM), or any other scale tone — whether
   consonant or dissonant — or any other tone, or none at all.
-- Set the "Start and Endpoint": Define if the first and/or last harmony should have a predefined bass note, structure, or not.
+- Set the "Start and Endpoint": Define if the first and/or last harmony should
+  have a predefined bass note, stucture, or not.
+- Set "Bass Line Exceptions": Define specific rules for the lowest voice, like
+  "Drone" for one tone only for the whole melody or until an endpoint is
+  reached, "Jumpy" for extra movement, "Walking", etc.
 
 The program must facilitate the input of a melody along with its time unit
 using basic Lilypond syntax. It should generate a harmonic "accompaniment" in
@@ -131,43 +135,3 @@ straightforward Lilypond syntax for PDF score and MIDI file output, while also
 issuing relevant error and warning messages when certain actions cannot be
 performed. Furthermore, it should provide all possible results, and the option
 to combine portions of different calculations.
-
-Opera ARIA (AI) says about "harm" (unmodified):
-
-The program "harm" is designed to assist users in creating and manipulating
-harmonic structures in music composition. Here are some key features and
-functionalities associated with the program:
-
-- Melody Input: Users can input a melody using simple Lilypond syntax, which
-  may be entered manually or read from a file. The melody must include at least
-  one note and a time signature.
-- Scale Selection: The program allows users to select a scale consisting of
-  three to twelve tones, which are repeated across octaves. The terminology
-  used is "scale" rather than "tonality."
-- Consonance and Dissonance Levels: Users can define different levels of
-  consonance and dissonance, categorizing intervals based on their stability.
-  The program acknowledges various levels, such as perfect consonance,
-  imperfect consonance, dissonance, and strong dissonance.
-- Dissonant Resolution: Users can specify how dissonances should resolve —
-  whether they should move up or down to achieve consonance, or remain
-  dissonant.
-- Voice Movement Restrictions: The program includes settings for how far a
-  single voice can jump (beyond one scale tone) and whether it can transition
-  to a consonant or dissonant tone.
-- Voice Crossing: Users can determine whether voices are allowed to cross each
-  other in their ranges.
-- Endpoint Dissonance Level: This feature enables users to set how dissonant a
-  resolution can be to qualify as an "endpoint".
-- Vertical Rate: The program allows users to set how many voices can sound
-  simultaneously, influencing the overall dissonance level.
-- Range and Parallels: Users can define the range for each voice to avoid
-  clutter and set rules for which interval parallels are permissible.
-- Horizontal Rate: This setting governs how many changes are allowed or
-  required per time unit, as defined by the melody.
-- Transpose Rate: Users can specify if and how far the tonal environment can
-  move as a whole to a different fundamental, which can enhance the harmonic
-  complexity.
-
-Overall, "harm" is a sophisticated tool for music composition, focusing on
-harmonic relationships and providing users with a range of options to explore
-musical structures.
