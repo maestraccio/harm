@@ -1,13 +1,12 @@
 # harm
 ### Harm: A Counter-Traditional Harmonizing Program
-
 "Harmonies" are conventionally defined in Western Classical Music theory
 (abbreviated as WCM) as "simultaneously sounding tones in a harmonious manner".
 This definition raises at least two questions: What exactly constitutes a
 "tone," and what qualifies as "harmoniously"?
 
 #### 1. Tone:
-Sound is defined as the "audible movement of air." A "tone", in contrast,
+Sound is defined as the "audible movement of air". A "tone", in contrast,
 refers to "sound at a measurable frequency". For practical reasons, "harm" will
 utilize the commonly accepted twelve-semitone/chromatic evenly divided (or
 "well tempered") scale to define and label twelve distinct notes within each
@@ -26,14 +25,14 @@ Different musical styles may perceive various combinations as more consonant
 than others. For instance, in BeBop-Jazz, a "plain tonic triad" might be viewed
 as dissonant, whereas a certain degree of "WCM dissonance" could be considered
 consonant within that genre. WCM harmonies are distinctly named and typically
-include the same tones, aside from octaves.  The fundamental aspect of a
+include the same notes, aside from octavings. The fundamental aspect of a
 "harmony" consists of a set of "consonants", tones that closely align with the
 lower overtones in air-carried sounds, such as the "perfect fifth" (third
 overtone) and the "major third" (fifth overtone). It is important to note that
 the second and fourth overtones are octaves of the fundamental, resulting in
 [1, (2,) 3, (4,) 5], which is identified as "tonic" or "root". For example, in
-the combination \<c e g\>, \<c\> serves as the fundamental, \<e\> represents the
-fifth overtone transposed two octaves down, and \<g\> is the third overtone
+the combination \<c e g\>, \<c\> serves as the fundamental, \<e\> represents
+the fifth overtone transposed two octaves down, and \<g\> is the third overtone
 transposed one octave down. Any other combinations of tones (or situations
 where octaving transforms one or more consonants into dissonants) are perceived
 as less consonant/tonic in WCM due to the natural laws governing sound
@@ -41,7 +40,7 @@ transmission through air.
 
 #### BUT:
 What if these overtones were not consonant? For example, if they were carried
-through a medium other than air, such as a different gas or liquid?  Consider a
+through a medium other than air, such as a different gas or liquid? Consider a
 straight stick partially submerged in water; the part below the surface appears
 different from the portion above. This analogy can also apply to sound.
 Different tone combinations could be perceived as consonant, while the
@@ -54,9 +53,10 @@ In the new program "harm", users must be able to perform the following actions
 at a minimum:
 
 - Insert a "Melody": Users can input a melody either manually through a text
-  prompt or by importing it from a file. The melody should include at least one
-  note and a time signature, with Lilypond syntax recommended.
-- Set "Melody As Bass Line": Use the melody not as the highest voice but as the 
+  prompt or by importing it from a file. The melody must be provided as a
+  single melody staff with at least one note and a time signature, in Lilypond
+  syntax, like \{\\time 4/4 a'4 b'8 cis''8 d''4 f''4 \}.
+- Set "Melody As Bass Line": Use the melody not as the highest voice but as the
   lowest. All other voices go on top of the melody instead of below.
 - Set the "Scale": Traditionally, WCM scales consist of seven tones, with some
   exceptions. In "harm", users can choose between three to twelve tones to
@@ -88,8 +88,8 @@ at a minimum:
 - Set the "Voice Crossing Allowance": Users can specify whether voices are
   permitted to cross each other or if their ranges are constrained by
   surrounding voices.
-- Set the "Dissonance Level Range": Set between which minimum and
-  maximum the dissonance of the harmonies may and must be.
+- Set the "Dissonance Level Range": Set between which minimum and maximum the
+  dissonance of the harmonies may and must be.
 - Set the "Endpoint Dissonance Level": Users can determine how dissonant a
   resolution can be for it to be considered an "endpoint". This is essential
   when achieving full consonance is not feasible due to a higher "vertical
