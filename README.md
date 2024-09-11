@@ -70,7 +70,8 @@ at a minimum:
   distance of "0" between two separate voices (known as "perfect unison") can
   be categorized as such by the user through this setting. Fewer levels may be
   more appropriate for simpler scales, while more levels may be suitable for
-  complex scales.
+  complex scales. Possible consonant/dissonant extensions include "mandatory"
+  and "prohibited".
 - Set "Dissonant Resolutions": In WCM, one of the tones in a dissonant interval
   typically resolves downward into an imperfectly consonant interval. "harm"
   users must decide whether a dissonant note should resolve upwards or
