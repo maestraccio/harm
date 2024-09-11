@@ -53,7 +53,7 @@ criteria, while still adhering to the same — yet adaptable — composing rules
 In the new program "harm", users must be able to perform the following actions
 at a minimum:
 
-## Base Material:
+#### Base Material:
 - Insert a "Melody": Users can input a melody either manually through a text
   prompt or by importing it from a file. The melody must be provided as a
   single melody line with a time signature and at least one note, in Lilypond
@@ -68,7 +68,7 @@ at a minimum:
   anoice voice of choice. All other voices go around or on top of the melody
   instead of below.
 
-## Tonal Environment:
+#### Tonal Environment:
 - Set the "Scale and Fundamental": Traditionally, WCM scales consist of seven
   tones, with some exceptions. In "harm", users can choose between three to
   twelve tones to create a scale that repeats in every octave, similar to WCM.
@@ -111,7 +111,7 @@ at a minimum:
   Lilypond syntax. If "Voice Crossing Allowance" is "OFF" and given notes are
   crossing, a relevant error should be raised.
 
-## Single-voice Variables:
+#### Single-voice Variables:
 - Set the "Range" of each voice: This setting is necessary to prevent all
   voices from becoming overly cluttered together.
 - Set the "Jump": Users can define how far a single voice is allowed to jump up
@@ -134,7 +134,7 @@ at a minimum:
   lowest (bass) voice, but can in "harm" be assigned to any voice. Suggested
   names are being evaluated.
 
-## Multi-voice Variables:
+#### Multi-voice Variables:
 - Set "Dissonant Resolutions": In WCM, one of the tones in a dissonant interval
   typically resolves downward into an imperfectly consonant interval. "harm"
   users must decide whether a dissonant note should resolve upwards or
