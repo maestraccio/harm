@@ -58,7 +58,7 @@ at a minimum:
   note and a time signature, with Lilypond syntax recommended.
 - Set "Melody As Bass Line": Use the melody not as the highest voice but as the 
   lowest. All other voices go on top of the melody instead of below.
-  - Set the "Scale": Traditionally, WCM scales consist of seven tones, with some
+- Set the "Scale": Traditionally, WCM scales consist of seven tones, with some
   exceptions. In "harm", users can choose between three to twelve tones to
   create a scale that repeats in every octave, similar to WCM. The term "scale"
   will be used instead of "tonality".
