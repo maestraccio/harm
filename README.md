@@ -1,7 +1,7 @@
 # harm
 ### Harm: A Counter-Traditional Harmonizing Program
-"Harmonies" are conventionally defined in Western Classical Music theory
-(abbreviated as WCM) as "simultaneously sounding tones in a harmonious manner".
+"Harmonies" are conventionally defined in Western Classical Music theory (here
+abbreviated as WCM) as "simultaneously sounding tones in a harmonious manner".
 This definition raises at least two questions: What exactly constitutes a
 "tone," and what qualifies as "harmoniously"?
 
@@ -13,10 +13,11 @@ utilize the commonly accepted twelve-semitone/chromatic evenly divided (or
 octave (referred to here as a "block of twelve semitones"), with each higher
 octave having double the frequency of the lower one. The notes are identified
 using the seven letters of WCM, with sharps for the in-between semitones: [A,
-A♯, B, C, C♯, D, D♯, E, F, F♯, G, G♯]. This naming convention is arbitrary. To
-minimize confusion, every "black key" is always considered a "white key with a
-sharp", and every "white key" consistently retains the same letter. While this
-naming method is still being explored, it provides a necessary starting point.
+Ais, B, C, Cis, D, Dis, E, F, Fis, G, Gis]. This naming convention is
+arbitrary. To minimize confusion, every "black key" is always considered a
+"white key with a sharp", and every "white key" consistently retains the same
+letter. While this naming method is still being explored, it provides a
+necessary starting point.
 
 #### 2. Harmony:
 The concept of what is considered "harmoniously" is influenced by tradition,
@@ -55,7 +56,7 @@ at a minimum:
 - Insert a "Melody": Users can input a melody either manually through a text
   prompt or by importing it from a file. The melody must be provided as a
   single melody staff with at least one note and a time signature, in Lilypond
-  syntax, like \{\\time 4/4 a'4 b'8 cis''8 d''4 f''4 \}.
+  absolute syntax, like \{\\time 3/4 a'4 b'8 cis''8 d''4 f''2.\}.
 - Set "Melody As Bass Line": Use the melody not as the highest voice but as the
   lowest. All other voices go on top of the melody instead of below.
 - Set the "Scale": Traditionally, WCM scales consist of seven tones, with some
