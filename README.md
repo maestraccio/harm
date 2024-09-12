@@ -17,7 +17,9 @@ Ais, B, C, Cis, D, Dis, E, F, Fis, G, Gis]. This naming convention is
 arbitrary. To minimize confusion, every "black key" is always considered a
 "white key with a sharp", and every "white key" consistently retains the same
 letter. While this naming method is still being explored, it provides a
-necessary starting point.
+necessary starting point. While the word "Tone" indicates the actual sound, the
+word "Note" is used for the representation of that tone, either on paper or in
+the programming code.
 
 #### 2. Harmony:
 The concept of what is considered "harmoniously" is influenced by tradition,
