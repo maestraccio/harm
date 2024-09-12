@@ -76,8 +76,8 @@ at a minimum:
 
 #### Tonal Environment:
 - Set the "Scale and Fundamental": Traditionally, WCM scales consist of seven
-  tones, with some exceptions. In "harm", users can choose between three to
-  twelve tones to create a scale that repeats in every octave, similar to WCM.
+  notes, with some exceptions. In "harm", users can choose between three to
+  twelve notes to create a scale that repeats in every octave, similar to WCM.
   The term "scale" will be used instead of "tonality". The scale does not need
   to contain only melody notes if a "Transpose Rate" is set, otherwise at some
   point an error will be raised. The choice of a "Fundamental" is optional.
@@ -103,14 +103,14 @@ at a minimum:
   inotes that are not represented by the chosen scale, and it can also enhance
   the harmonic outcome. Options may include allowing movement up or down with a
   "perfect consonant" interval (which is the most common approach in WCM), or
-  any other scale tone — whether consonant or dissonant — or any other tone, or
+  any other scale note — whether consonant or dissonant — or any other note, or
   none at all. The Transposision Rate is entered as an interval up or down.
 - Set the "Horizontal Rate": This setting determines how many changes are
   permitted or mandatory per time unit. The time unit is defined by the user
   provided Lilypond fragment (or potentially by "mel" in the future). The
-  "mandatory" setting governs continuous harmonic movement if the melody tone
+  "mandatory" setting governs continuous harmonic movement if the melody note
   remains unchanged. In "Choral mode", the harmony is adjusted only with each
-  change in the melody tone.
+  change in the melody note.
 - Set the "Endpoint Skip Horizontal Rate": When a (consonant) "Endpoint" is
   reached, wait longer before the next change, initiated by the "Volunteer".
 - Set the "Start and Endpoint": Define if the first and/or last harmony should
@@ -123,27 +123,27 @@ at a minimum:
 - Set the "Range" of each voice: This setting is necessary to prevent all
   voices from becoming overly cluttered together.
 - Set the "Jump": Users can define how far a single voice is allowed to jump up
-  or down (crossing more than one scale tone) and whether it can transition to
+  or down (crossing more than one scale note) and whether it can transition to
   a consonant or dissonant interval (and to what level) from either a consonant
   or dissonant interval. The voice must obviously remain within its defined
   range.
 - Set "Leading Tones Allowance": Set a minimum/maximum of "Leading Tones": Use
-  a tone that is outside the selected scale to resolve by a half-step to a
-  scale tone, upwards, downwards, or both.
+  a note that is outside the selected scale to resolve by a half-step to a
+  scale note, upwards, downwards, or both.
 - Set the "Note Repetition": Set if a non-changing note is repeated in the next
   harmony, is tied, is a Rest (if allowed), or influenced by the "Rate of
   Simultaneous Movements".
 - Set the "Rest Allowance": Define if a voice should always play a note, or if
   and how many rests are allowed.
 - Set "Voice Exceptions": Define specific exceptions for a specific voice, like
-  "Drone" for one tone only for the whole melody or until an endpoint is
+  "Drone" for one note only for the whole melody or until an endpoint is
   reached, "Jumpy" for extra movement, "Walking", etc. where for every
   exception set specific variables can be defined. Applies in WCM mostly to the
   lowest (bass) voice, but can in "harm" be assigned to any voice. Suggested
   names are being evaluated.
 
 #### Multi-voice Variables:
-- Set "Dissonant Resolutions": In WCM, one of the tones in a dissonant interval
+- Set "Dissonant Resolutions": In WCM, one of the notes in a dissonant interval
   typically resolves downward into an imperfectly consonant interval. "harm"
   users must decide whether a dissonant note should resolve upwards or
   downwards into another interval, or not, and indicate whether that interval
@@ -155,7 +155,7 @@ at a minimum:
   parallels are considered problematic. Users can specify which parallels are
   allowed or forbidden.
 - Set the "Rate of Simultaneous Movements": The minimum value is "1", allowing
-  only one tone to transition to a new tone, with dissonants taking precedence
+  only one note to transition to a new note, with dissonants taking precedence
   over consonants, based on their dissonance level. The maximum value is "0",
   where all voices can move at the same time. This value must never exceed the
   "vertical rate".
