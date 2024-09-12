@@ -61,12 +61,18 @@ at a minimum:
 - Set the "Vertical Rate": This refers to how many voices are playing
   simultaneously. Voices are referred to as "Voice" rather than "Instrument",
   "Line" or "Staff" (or any other terminology).
+- Set the "Volunteer": Assign this role to one or more voices, to step outside
+  an "Endpoint" and initiate a new sequence from a new dissonant harmony, after
+  the "Endpoint Skip Horizontal Rate".
 - Set the "Voice Crossing Allowance": Users can specify whether voices are
   permitted to cross each other or if their ranges are constrained by
   surrounding voices.
 - Set "Melody As Other Voice": Use the melody not as the highest voice but as
   anoice voice of choice. All other voices go around or on top of the melody
   instead of below.
+- Set the "Repetition Rate": Prevent repeated equal movements, for instance if
+  the "Volunteer" initiates a dissonant harmony that they resolve themselves,
+  after which they are assumed to move to another dissonant again.
 
 #### Tonal Environment:
 - Set the "Scale and Fundamental": Traditionally, WCM scales consist of seven
@@ -105,6 +111,8 @@ at a minimum:
   "mandatory" setting governs continuous harmonic movement if the melody tone
   remains unchanged. In "Choral mode", the harmony is adjusted only with each
   change in the melody tone.
+- Set the "Endpoint Skip Horizontal Rate": When a (consonant) "Endpoint" is
+  reached, wait longer before the next change, initiated by the "Volunteer".
 - Set the "Start and Endpoint": Define if the first and/or last harmony should
   have a predefined bass note, stucture, or not. If set, to the affected
   voice(s), a starting and/or an ending note must be assigned in absolute
