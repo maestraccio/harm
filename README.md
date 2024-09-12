@@ -61,22 +61,46 @@ at a minimum:
   \{\\time 3/4 a'4 b'8 cis''8 d''4 f''2.\}
   - manually through a text prompt
   - by importing it from a file
-  
 - Set the "Vertical Rate": This refers to how many voices are playing
   simultaneously. Voices are referred to as "Voice" rather than "Instrument",
   "Line" or "Staff" (or any other terminology).
+  - as a number, including the given melody
+  - as an ensemble, like "String Quartet" or "SATB Choir", with predefined
+  settings, like voice range and "Rest Allowance".
 - Set the "Volunteer": Assign this role to one or more voices, to step outside
-  an "Endpoint" and initiate a new sequence from a new dissonant harmony, after
-  the "Endpoint Skip Horizontal Rate".
+  an "Endpoint" and initiate a new sequence from a new harmony, after the
+  "Endpoint Skip Horizontal Rate". Assign exceptional options to 
+  - Move to a dissonant instead of a consonant, to different dissonance levels:
+    - "Yes"
+    - "No"
+  - Set a different "Jump", in order to always facilitate a new starting point:
+    - Only next scale note
+    - Jump to other scale note
+    - Jump to "Leading Tone"
+  - Allow moving down instead of up:
+    - "Yes"
+    - "No"
+  - Allow moving up instead of down:
+    - "Yes"
+    - "No"
 - Set the "Voice Crossing Allowance": Users can specify whether voices are
   permitted to cross each other or if their ranges are constrained by
   surrounding voices.
+  - "Yes"
+  - "No"
 - Set "Melody As Other Voice": Use the melody not as the highest voice but as
   another voice of choice. All other voices go around or on top of the melody
   instead of below.
+  - Choose one other voice to assign the melody to
+    - Octaving option to fit in voice range
 - Set the "Repetition Rate": Prevent repeated equal movements, for instance if
   the "Volunteer" initiates a dissonant harmony that they resolve themselves,
   after which they are assumed to move to another dissonant again.
+  - "Off": The "Volunteer" can move back to the same previous dissonant and
+    perform the same resolution again, over and over, until the melody moves
+    and forces a different decision.
+  - "On": Set a number of maximum repetitions before the "Volunteer" must
+    decide on another dissonant to move to
 
 #### Tonal Environment:
 - Set the "Scale and Fundamental": Traditionally, WCM scales consist of seven
