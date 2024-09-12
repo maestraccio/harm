@@ -70,7 +70,7 @@ at a minimum:
   permitted to cross each other or if their ranges are constrained by
   surrounding voices.
 - Set "Melody As Other Voice": Use the melody not as the highest voice but as
-  anoice voice of choice. All other voices go around or on top of the melody
+  another voice of choice. All other voices go around or on top of the melody
   instead of below.
 - Set the "Repetition Rate": Prevent repeated equal movements, for instance if
   the "Volunteer" initiates a dissonant harmony that they resolve themselves,
