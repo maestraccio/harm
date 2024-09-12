@@ -56,10 +56,12 @@ In the new program "harm", users must be able to perform the following actions
 at a minimum:
 
 #### Base Material:
-- Insert a "Melody": Users can input a melody either manually through a text
-  prompt or by importing it from a file. The melody must be provided as a
-  single melody line with a time signature and at least one note, in Lilypond
-  absolute syntax, like \{\\time 3/4 a'4 b'8 cis''8 d''4 f''2.\}.
+- Insert a "Melody": Users can input a single melody line with a time signature
+  and at least one note, in Lilypond absolute syntax, like
+  \{\\time 3/4 a'4 b'8 cis''8 d''4 f''2.\}
+  - manually through a text prompt
+  - by importing it from a file
+  
 - Set the "Vertical Rate": This refers to how many voices are playing
   simultaneously. Voices are referred to as "Voice" rather than "Instrument",
   "Line" or "Staff" (or any other terminology).
@@ -102,7 +104,7 @@ at a minimum:
 - Set the "Transpose Rate": This setting specifies whether — and to what extent
   — the entire tonal environment can shift to a different scale with the same
   structure. This adjustment may be necessary if the provided melody includes
-  inotes that are not represented by the chosen scale, and it can also enhance
+  notes that are not represented by the chosen scale, and it can also enhance
   the harmonic outcome. Options may include allowing movement up or down with a
   "perfect consonant" interval (which is the most common approach in WCM), or
   any other scale note — whether consonant or dissonant — or any other note, or
