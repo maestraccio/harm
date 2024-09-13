@@ -60,7 +60,10 @@ at a minimum:
   and at least one note and one ore more optional "Endpoint" markings, in
   Lilypond absolute syntax, like <br>
   <code>\{\\time 3/4 a'4 b'8 cis''8 d''4 \\bar "." f''2.\}</code><br>
-  where every extra <code>\\bar \".\"</code> indicates an "Endpoint".
+  where every extra <code>\\bar \".\"</code> indicates an "Endpoint". After an
+  "Endpoint", all voices are a "one-time volunteer", where a completely new
+  harmony is set up, to initiate a new sequence after the "Endpoint Skip
+  Horizontal Rate".
   - manually through a text prompt
   - by importing it from a file
 - Set the "Vertical Rate": This refers to how many voices are playing
@@ -70,8 +73,8 @@ at a minimum:
   - as an ensemble, like "String Quartet" or "SATB Choir", with predefined
   settings, like voice range and "Rest Allowance".
 - Set the "Volunteer": Assign this role to one or more voices, to step outside
-  an "Endpoint" and initiate a new sequence from a new harmony, after the
-  "Endpoint Skip Horizontal Rate". Assign exceptional options to 
+  a consonant harmony and initiate a new sequence from a new harmony. Assign
+  exceptional options to 
   - Move to a dissonant instead of a consonant, to different dissonance levels:
     - "Yes"
     - "No"
