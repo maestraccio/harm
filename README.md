@@ -58,8 +58,8 @@ at a minimum:
 #### Base Material:
 - Insert a "Melody": Users can input a single melody line with a time signature
   and at least one note and one ore more optional "Endpoint" markings, in
-  Lilypond absolute syntax, like
-  \{\\time 3/4 a'4 b'8 cis''8 d''4i\\bar"." f''2.\}
+  Lilypond absolute syntax, like <break/>
+  \{\\time 3/4 a'4 b'8 cis''8 d''4 \\bar"." f''2.\}<break/>
   where every extra "\\bar\".\"" indicates an "Endpoint"
   - manually through a text prompt
   - by importing it from a file
