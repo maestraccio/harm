@@ -59,8 +59,8 @@ at a minimum:
 - Insert a "Melody": Users can input a single melody line with a time signature
   and at least one note and one ore more optional "Endpoint" markings, in
   Lilypond absolute syntax, like <br>
-  \{\\time 3/4 a'4 b'8 cis''8 d''4 \\bar"." f''2.\}<br>
-  where every extra "\\bar\".\"" indicates an "Endpoint"
+  <code>\{\\time 3/4 a'4 b'8 cis''8 d''4 \\bar "." f''2.\}</code><br>
+  where every extra " \\bar \".\" " indicates an "Endpoint".
   - manually through a text prompt
   - by importing it from a file
 - Set the "Vertical Rate": This refers to how many voices are playing
