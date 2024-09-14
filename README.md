@@ -158,11 +158,7 @@ criteria, while still adhering to the same — yet adaptable — composing rules
         Choose one other voice to assign the melody to
         <ul>
           <li>
-            <ul>
-              <li>
-                Octaving option to fit in voice range
-              </li>
-            </ul>
+            Octaving option to fit in voice range
           </li>
         </ul>
       </li>
