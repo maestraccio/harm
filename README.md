@@ -52,8 +52,8 @@ idea of breaking free from the constraints of nature and creating new harmonies
 using the twelve available tones, defined by user-inputted consonant/dissonant
 criteria, while still adhering to the same — yet adaptable — composing rules.
 
-In the new program "harm", users must be able to perform the following actions
-at a minimum:
+##In the new program "harm", users must be able to perform the following actions
+##at a minimum:
 
 #### Base Material:
 - Insert a "Melody": Users can input a single melody line with a time signature
@@ -66,14 +66,15 @@ at a minimum:
   "Endpoint Skip Horizontal Rate", like initiating a new melody.
   - manually through a text prompt
   - by importing it from a .ly-file. Only the first melody statement is used
-    and may contain only single notes: no chords <code>\<\></code> and no
-    polyphony <code>\<\<{\}\/\/\{\}\>\></code>.
+    and it may contain only single notes: no chords <code>\<...\></code> and no
+    polyphony <code>\<\<\{...\}\\\\\{...\}\>\></code>.
 - Set the "Vertical Rate": This refers to how many voices are playing
   simultaneously. Voices are referred to as "Voice" rather than "Instrument",
   "Line" or "Staff" (or any other terminology).
-  - as a number, including the given melody
-  - as an ensemble, like "ViVaVc String Trio" or "SATB Choir", with predefined
-  settings, like voice range and "Rest Allowance".
+  - as a number, including the given melody, if the melody is one of the voices
+    in the total ensemble (see also "Melody as Other Voice" and "Protagonist")
+  - as a preset ensemble, like "ViVaVc String Trio" or "SATB Choir", with
+    predefined settings, like voice range and "Rest Allowance".
 - Set the "Volunteer": Assign this role to one or more voices, to step outside
   a consonant harmony and initiate a new sequence from a new harmony. Assign
   exceptional options to 
@@ -120,6 +121,8 @@ at a minimum:
   The term "scale" will be used instead of "tonality". The scale does not need
   to contain only melody notes if a "Transpose Rate" is set, otherwise at some
   point an error will be raised. The choice of a "Fundamental" is optional.
+  - Choose three to twelve notes in a one-octave range which are to be
+    considered the "Scale".
 - Set "Levels of Consonance and Dissonance": Users will specify which intervals
   in the scale are considered consonant (stable: no tendency to resolve) and
   which are deemed dissonant (unstable: tendency to resolve). WCM recognizes
@@ -129,21 +132,36 @@ at a minimum:
   be categorized as such by the user through this setting. Fewer levels may be
   more appropriate for simpler scales, while more levels may be suitable for
   complex scales. Possible consonant/dissonant extensions may include
-  "mandatory" and "prohibited".
+  "mandatory" and "prohibited". Any note outside the scale is considered
+  dissonant and can only be used if
+    - A "Transpose Level" is set
+    - "Leading Tones Allowance" is set
+    or at least any one of the above
 - Set the "Dissonance Level Range": Set between which minimum and maximum the
   dissonance of the harmonies must stay. Minimum dissonance equals maximum
   consonance. Takes into account the "Levels of Consonance and Dissonance".
 - Set the "Endpoint Dissonance Level": Users can determine how dissonant a
   resolution can be for it to be considered an "endpoint". Takes into account
   the "Levels of Consonance and Dissonance".
-- Set the "Transpose Rate": This setting specifies whether — and to what extent
-  — the entire tonal environment can shift to a different scale with the same
-  structure. This adjustment may be necessary if the provided melody includes
-  notes that are not represented by the chosen scale, and it can also enhance
-  the harmonic outcome. Options may include allowing movement up or down with a
-  "perfect consonant" interval (which is the most common approach in WCM), or
-  any other scale note — whether consonant or dissonant — or any other note, or
-  none at all. The Transposision Rate is entered as an interval up or down.
+- Set the "Transpose Rate": This setting specifies whether the entire tonal
+  environment can shift to a different scale with the same structure. This
+  option may be necessary if the provided melody includes notes that are not
+  represented by the chosen scale and their movement cannot be solved with
+  "Leading Tones Allowance". It can also just enrich the harmonic outcome.
+  Options may include
+  - to a "perfect consonant" interval (which is the most common approach in
+    WCM) from the first "Scale" only. The last "Scale" to use must equal the
+    first, so if used, it must also go back again.
+  - to one or more chosen scale note(s)
+    - from the first "Scale" only
+    - set a maximum number of levels
+    - set if the last "Scale" to use must equal the first
+  - to any note, even outside the "Scale"
+    - from the first "Scale" only
+    - set a maximum number of levels
+    - set if the last "Scale" to use must equal the first
+  - none at all
+  The Transposision Rate is entered as an interval up or down.
 - Set the "Horizontal Rate": This setting determines how many changes are
   permitted or mandatory per time unit. The time unit is defined by the user
   provided Lilypond fragment (or potentially by "mel" in the future). The
