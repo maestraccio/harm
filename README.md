@@ -83,8 +83,9 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     "Line" or "Staff" (or any other terminology).
     <ul>
       <li>
-        as a number, including the given melody, if the melody is one of the voices
-        in the total ensemble (see also "Melody as Other Voice" and "Protagonist")
+        as a number, including the given melody, if the melody is one of the
+        voices in the total ensemble (see also "Melody as Other Voice" and
+        "Protagonist")
       </li>
       <li>
         as a preset ensemble, like "ViVaVc String Trio" or "SATB Choir", with
@@ -93,12 +94,13 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     </ul>
   </li>
   <li>
-    Set the "Volunteer": Assign this role to one or more voices, to step outside
-    a consonant harmony and initiate a new sequence from a new harmony. Assign
-    exceptional options to 
+    Set the "Volunteer": Assign this role to one or more voices, to step
+    outside a consonant harmony and initiate a new sequence from a new harmony.
+    Assign exceptional options to 
     <ul>
       <li>
-        Move to a dissonant instead of a consonant, to different dissonance levels:
+        Move to a dissonant instead of a consonant, to different dissonance
+        levels:
         <ul>
           <li>
             "Yes"
@@ -109,7 +111,8 @@ criteria, while still adhering to the same — yet adaptable — composing rules
         </ul>
       </li>
       <li>
-        Set a different "Jump", in order to always facilitate a new starting point:
+        Set a different "Jump", in order to always facilitate a new starting
+        point:
         <ul>
           <li>
             Only next scale note
@@ -151,8 +154,8 @@ criteria, while still adhering to the same — yet adaptable — composing rules
   </li>
   <li>
     Set "Melody As Other Voice": Use the melody not as the highest voice but as
-    another voice of choice, as part of the ensemble. All other voices go around
-    or on top of the melody instead of below.
+    another voice of choice, as part of the ensemble. All other voices go
+    around or on top of the melody instead of below.
     <ul>
       <li>
         Choose one other voice to assign the melody to
@@ -165,11 +168,11 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     </ul>
   </li>
   <li>
-    - Set "Protagonist": if the melody voice stands out as a soloist and does not
-      take part in de ensemble that form the harmony. If this option is chosen, the
-      "Protagonist" can also be silent for the duration of the "melody" ("tacet al
-      fine" in WCM), to create a random series of harmonies, yet following the
-      settings.
+    Set "Protagonist": if the melody voice stands out as a soloist and does not
+    take part in de ensemble that form the harmony. If this option is chosen,
+    the "Protagonist" can also be silent for the duration of the "melody"
+    ("tacet al fine" in WCM), to create a random series of harmonies, yet
+    following the settings.
   </li>
   <li>
     Set the "Voice Crossing Allowance": Users can specify whether voices are
@@ -185,14 +188,15 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     </ul>
   </li>
   <li>
-    Set the "Repetition Rate": Prevent repeated equal movements, for instance if
-    the "Volunteer" initiates a dissonant harmony that they resolve themselves,
-    after which they are assumed to move to another dissonant again.
+    Set the "Repetition Rate": Prevent repeated equal movements, for instance
+    if the "Volunteer" initiates a dissonant harmony that they resolve
+    themselves, after which they are assumed to move to another dissonant
+    again.
     <ul>
       <li>
         "Off": The "Volunteer" can move back to the same previous dissonant and
-        perform the same resolution again, over and over, until the melody moves
-        and forces a different decision.
+        perform the same resolution again, over and over, until the melody
+        moves and forces a different decision.
       </li>
       <li>
         "On": Set a number of maximum repetitions before the "Volunteer" must
