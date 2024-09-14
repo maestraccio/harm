@@ -60,17 +60,21 @@ at a minimum:
   and at least one note and one ore more optional "Endpoint" markings, in
   Lilypond absolute syntax, like <br>
   <code>\{\\time 3/4 a'4 b'8 cis''8 d''4 \\bar "." f''2.\}</code><br>
-  where every extra <code>\\bar \".\"</code> indicates an "Endpoint". After an
-  "Endpoint", all voices are a "one-time volunteer", where a completely new
-  harmony is set up, to initiate a new sequence after the "Endpoint Skip
-  Horizontal Rate".
+  where every extra <code>\\bar \".\"</code> or doubled bar line indicates an
+  "Endpoint". After an "Endpoint", all voices are a "one-time volunteer", where
+  a completely new harmony is set up, to initiate a new sequence after the
+  "Endpoint Skip Horizontal Rate", like initiating a new melody.
   - manually through a text prompt
-  - by importing it from a file
+  - by importing it from a .ly-file. Only the first melody statement is used
+    and may contain only single notes: no chords
+    <code>\<\></code>
+    and no polyphony
+    <code>\<\<{\}\/\/\{\}\>\></code>
 - Set the "Vertical Rate": This refers to how many voices are playing
   simultaneously. Voices are referred to as "Voice" rather than "Instrument",
   "Line" or "Staff" (or any other terminology).
   - as a number, including the given melody
-  - as an ensemble, like "String Quartet" or "SATB Choir", with predefined
+  - as an ensemble, like "ViVaVc String Trio" or "SATB Choir", with predefined
   settings, like voice range and "Rest Allowance".
 - Set the "Volunteer": Assign this role to one or more voices, to step outside
   a consonant harmony and initiate a new sequence from a new harmony. Assign
@@ -88,16 +92,20 @@ at a minimum:
   - Allow moving up instead of down:
     - "Yes"
     - "No"
+- Set "Melody As Other Voice": Use the melody not as the highest voice but as
+  another voice of choice, as part of the ensemble. All other voices go around
+  or on top of the melody instead of below.
+  - Choose one other voice to assign the melody to
+    - Octaving option to fit in voice range
+- Set "Protagonist": if the melody voice stands out as a soloist and does not
+  take part in de ensemble that form the harmony. If this option is chosen, the
+  "Protagonist" can also be silent for the duration of the "melody", to create
+  a random series of harmonies, yet following the settings.
 - Set the "Voice Crossing Allowance": Users can specify whether voices are
   permitted to cross each other or if their ranges are constrained by
   surrounding voices.
   - "Yes"
   - "No"
-- Set "Melody As Other Voice": Use the melody not as the highest voice but as
-  another voice of choice. All other voices go around or on top of the melody
-  instead of below.
-  - Choose one other voice to assign the melody to
-    - Octaving option to fit in voice range
 - Set the "Repetition Rate": Prevent repeated equal movements, for instance if
   the "Volunteer" initiates a dissonant harmony that they resolve themselves,
   after which they are assumed to move to another dissonant again.
@@ -153,7 +161,7 @@ at a minimum:
   crossing, a relevant error should be raised.
 
 #### Single-voice Variables:
-- Set the "Range" of each voice: This setting is necessary to prevent all
+- Set the "Voice Range" of each voice: This setting is necessary to prevent all
   voices from becoming overly cluttered together.
 - Set the "Jump": Users can define how far a single voice is allowed to jump up
   or down (crossing more than one scale note) and whether it can transition to
