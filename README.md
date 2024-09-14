@@ -57,71 +57,120 @@ criteria, while still adhering to the same — yet adaptable — composing rules
 #### Base Material:
 <ul>
   <li>
-    Insert a "Melody": Users can input a single melody line with a time signature
-    and at least one note and one ore more optional "Endpoint" markings, in
-    Lilypond absolute syntax, like <br>
-    <code>\{\\time 3/4 a'4 b'8 cis''8 d''4 \\bar "." f''2.\}</code><br>
-    where every extra <code>\\bar \".\"</code> or doubled bar line indicates an
-    "Endpoint". After an "Endpoint", all voices are a "one-time volunteer", where
-    a completely new harmony is set up, to initiate a new sequence after the
-    "Endpoint Skip Horizontal Rate", like initiating a new melody.
+    Insert a "Melody": Users can input a single melody line with a time
+    signature and at least one note and one ore more optional "Endpoint"
+    markings, in Lilypond absolute syntax, like <br> <code>\{\\time 3/4 a'4 b'8
+    cis''8 d''4 \\bar "." f''2.\}</code><br> where every extra <code>\\bar
+    \".\"</code> or doubled bar line indicates an "Endpoint". After an
+    "Endpoint", all voices are a "one-time volunteer", where a completely new
+    harmony is set up, to initiate a new sequence after the "Endpoint Skip
+    Horizontal Rate", like initiating a new melody.
     <ul>
       <li>
-        - manually through a text prompt
+        manually through a text prompt
       </li>
       <li>
-        - by importing it from a .ly-file. Only the first melody statement is used
-        and it may contain only single notes: no chords <code>\<...\></code> and no
-        polyphony <code>\<\<\{...\}\\\\\{...\}\>\></code>.
+        by importing it from a .ly-file. Only the first melody statement is
+        used and it may contain only single notes: no chords
+        <code>\<...\></code> and no polyphony
+        <code>\<\<\{...\}\\\\\{...\}\>\></code>.
       </li>
     </ul>
   </li>
-- Set the "Vertical Rate": This refers to how many voices are playing
-  simultaneously. Voices are referred to as "Voice" rather than "Instrument",
-  "Line" or "Staff" (or any other terminology).
-  - as a number, including the given melody, if the melody is one of the voices
-    in the total ensemble (see also "Melody as Other Voice" and "Protagonist")
-  - as a preset ensemble, like "ViVaVc String Trio" or "SATB Choir", with
-    predefined settings, like voice range and "Rest Allowance".
-- Set the "Volunteer": Assign this role to one or more voices, to step outside
-  a consonant harmony and initiate a new sequence from a new harmony. Assign
-  exceptional options to 
-  - Move to a dissonant instead of a consonant, to different dissonance levels:
-    - "Yes"
-    - "No"
-  - Set a different "Jump", in order to always facilitate a new starting point:
-    - Only next scale note
-    - Jump to other scale note
-    - Jump to "Leading Tone"
-  - Allow moving down instead of up:
-    - "Yes"
-    - "No"
-  - Allow moving up instead of down:
-    - "Yes"
-    - "No"
-- Set "Melody As Other Voice": Use the melody not as the highest voice but as
-  another voice of choice, as part of the ensemble. All other voices go around
-  or on top of the melody instead of below.
-  - Choose one other voice to assign the melody to
-    - Octaving option to fit in voice range
-- Set "Protagonist": if the melody voice stands out as a soloist and does not
-  take part in de ensemble that form the harmony. If this option is chosen, the
-  "Protagonist" can also be silent for the duration of the "melody" ("tacet al
-  fine" in WCM), to create a random series of harmonies, yet following the
-  settings.
-- Set the "Voice Crossing Allowance": Users can specify whether voices are
-  permitted to cross each other or if their ranges are constrained by
-  surrounding voices.
-  - "Yes"
-  - "No"
-- Set the "Repetition Rate": Prevent repeated equal movements, for instance if
-  the "Volunteer" initiates a dissonant harmony that they resolve themselves,
-  after which they are assumed to move to another dissonant again.
-  - "Off": The "Volunteer" can move back to the same previous dissonant and
-    perform the same resolution again, over and over, until the melody moves
-    and forces a different decision.
-  - "On": Set a number of maximum repetitions before the "Volunteer" must
-    decide on another dissonant to move to.
+  <li>
+    Set the "Vertical Rate": This refers to how many voices are playing
+    simultaneously. Voices are referred to as "Voice" rather than "Instrument",
+    "Line" or "Staff" (or any other terminology).
+    <ul>
+      <li>
+        as a number, including the given melody, if the melody is one of the voices
+        in the total ensemble (see also "Melody as Other Voice" and "Protagonist")
+      </li>
+      <li>
+        as a preset ensemble, like "ViVaVc String Trio" or "SATB Choir", with
+        predefined settings, like voice range and "Rest Allowance".
+      </li>
+    </ul>
+  </li>
+  <li>
+    Set the "Volunteer": Assign this role to one or more voices, to step outside
+    a consonant harmony and initiate a new sequence from a new harmony. Assign
+    exceptional options to 
+    <ul>
+      <li>
+        Move to a dissonant instead of a consonant, to different dissonance levels:
+        <ul>
+          <li>
+            "Yes"
+          </li>
+          <li>
+            "No"
+          </li>
+        </ul>
+      </li>
+      <li>
+        Set a different "Jump", in order to always facilitate a new starting point:
+        <ul>
+          <li>
+            Only next scale note
+          </li>
+          <li>
+            Jump to other scale note
+          </li>
+          <li>
+            Jump to "Leading Tone"
+          </li>
+        </ul>
+      </li>
+      <li>
+        Allow moving down instead of up:
+        <ul>
+          <li>
+            "Yes"
+          </li>
+          <li>
+            "No"
+          </li>
+        </ul>
+      </li>
+      <li>
+        Allow moving up instead of down:
+        <ul>
+          <li>
+            "Yes"
+          </li>
+          <li>
+            "No"
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    - Set "Melody As Other Voice": Use the melody not as the highest voice but as
+      another voice of choice, as part of the ensemble. All other voices go around
+      or on top of the melody instead of below.
+      - Choose one other voice to assign the melody to
+        - Octaving option to fit in voice range
+    - Set "Protagonist": if the melody voice stands out as a soloist and does not
+      take part in de ensemble that form the harmony. If this option is chosen, the
+      "Protagonist" can also be silent for the duration of the "melody" ("tacet al
+      fine" in WCM), to create a random series of harmonies, yet following the
+      settings.
+    - Set the "Voice Crossing Allowance": Users can specify whether voices are
+      permitted to cross each other or if their ranges are constrained by
+      surrounding voices.
+      - "Yes"
+      - "No"
+    - Set the "Repetition Rate": Prevent repeated equal movements, for instance if
+      the "Volunteer" initiates a dissonant harmony that they resolve themselves,
+      after which they are assumed to move to another dissonant again.
+      - "Off": The "Volunteer" can move back to the same previous dissonant and
+        perform the same resolution again, over and over, until the melody moves
+        and forces a different decision.
+      - "On": Set a number of maximum repetitions before the "Volunteer" must
+        decide on another dissonant to move to.
+  </li>
 </ul>
 
 #### Tonal Environment:
