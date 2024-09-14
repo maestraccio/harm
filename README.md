@@ -52,8 +52,7 @@ idea of breaking free from the constraints of nature and creating new harmonies
 using the twelve available tones, defined by user-inputted consonant/dissonant
 criteria, while still adhering to the same — yet adaptable — composing rules.
 
-## In the new program "harm", users must be able to perform the following
-## actions at a minimum:
+## In the new program "harm", users must be able to perform the following actions at a minimum:
 
 #### Base Material:
 - Insert a "Melody": Users can input a single melody line with a time signature
