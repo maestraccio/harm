@@ -69,7 +69,7 @@ criteria, while still adhering to the same — yet adaptable — composing rules
   <li>- by importing it from a .ly-file. Only the first melody statement is used
     and it may contain only single notes: no chords <code>\<...\></code> and no
     polyphony <code>\<\<\{...\}\\\\\{...\}\>\></code>.</li>
-  </ul>
+</li>
 - Set the "Vertical Rate": This refers to how many voices are playing
   simultaneously. Voices are referred to as "Voice" rather than "Instrument",
   "Line" or "Staff" (or any other terminology).
