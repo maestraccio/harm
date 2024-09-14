@@ -55,7 +55,8 @@ criteria, while still adhering to the same — yet adaptable — composing rules
 ## In the new program "harm", users must be able to perform the following actions at a minimum:
 
 #### Base Material:
-- Insert a "Melody": Users can input a single melody line with a time signature
+<ul>
+<li> Insert a "Melody": Users can input a single melody line with a time signature
   and at least one note and one ore more optional "Endpoint" markings, in
   Lilypond absolute syntax, like <br>
   <code>\{\\time 3/4 a'4 b'8 cis''8 d''4 \\bar "." f''2.\}</code><br>
@@ -63,10 +64,12 @@ criteria, while still adhering to the same — yet adaptable — composing rules
   "Endpoint". After an "Endpoint", all voices are a "one-time volunteer", where
   a completely new harmony is set up, to initiate a new sequence after the
   "Endpoint Skip Horizontal Rate", like initiating a new melody.
-  - manually through a text prompt
-  - by importing it from a .ly-file. Only the first melody statement is used
+  <ul>
+  <li>- manually through a text prompt</li>
+  <li>- by importing it from a .ly-file. Only the first melody statement is used
     and it may contain only single notes: no chords <code>\<...\></code> and no
-    polyphony <code>\<\<\{...\}\\\\\{...\}\>\></code>.
+    polyphony <code>\<\<\{...\}\\\\\{...\}\>\></code>.</li>
+  </ul>
 - Set the "Vertical Rate": This refers to how many voices are playing
   simultaneously. Voices are referred to as "Voice" rather than "Instrument",
   "Line" or "Staff" (or any other terminology).
@@ -113,6 +116,7 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     and forces a different decision.
   - "On": Set a number of maximum repetitions before the "Volunteer" must
     decide on another dissonant to move to.
+</ul>
 
 #### Tonal Environment:
 - Set the "Scale and Fundamental": Traditionally, WCM scales consist of seven
