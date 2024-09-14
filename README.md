@@ -97,8 +97,9 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     - Octaving option to fit in voice range
 - Set "Protagonist": if the melody voice stands out as a soloist and does not
   take part in de ensemble that form the harmony. If this option is chosen, the
-  "Protagonist" can also be silent for the duration of the "melody", to create
-  a random series of harmonies, yet following the settings.
+  "Protagonist" can also be silent for the duration of the "melody" ("tacet al
+  fine" in WCM), to create a random series of harmonies, yet following the
+  settings.
 - Set the "Voice Crossing Allowance": Users can specify whether voices are
   permitted to cross each other or if their ranges are constrained by
   surrounding voices.
@@ -111,17 +112,21 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     perform the same resolution again, over and over, until the melody moves
     and forces a different decision.
   - "On": Set a number of maximum repetitions before the "Volunteer" must
-    decide on another dissonant to move to
+    decide on another dissonant to move to.
 
 #### Tonal Environment:
 - Set the "Scale and Fundamental": Traditionally, WCM scales consist of seven
   notes, with some exceptions. In "harm", users can choose between three to
   twelve notes to create a scale that repeats in every octave, similar to WCM.
-  The term "scale" will be used instead of "tonality". The scale does not need
-  to contain only melody notes if a "Transpose Rate" is set, otherwise at some
-  point an error will be raised. The choice of a "Fundamental" is optional.
-  - Choose three to twelve notes in a one-octave range which are to be
-    considered the "Scale".
+  The term "Scale" will be used instead of "tonality" or any other term. The
+  "Scale" does not need to contain only melody notes if a "Transpose Rate" or
+  "Leading Tones Allowance" is set, otherwise at some point an error will be
+  raised. The choice of a "Fundamental" is optional.
+  - Choose three to twelve notes in a one-octave range (from twelve semitones),
+    which are to be considered the "Scale".
+  - Optionally choose a "Fundamental", to define a bass note with a
+    corresponding consonant harmony for "Endpoint". The "Fundamental" will
+    follow the "Transpose Rate", if set.
 - Set "Levels of Consonance and Dissonance": Users will specify which intervals
   in the scale are considered consonant (stable: no tendency to resolve) and
   which are deemed dissonant (unstable: tendency to resolve). WCM recognizes
@@ -130,12 +135,20 @@ criteria, while still adhering to the same — yet adaptable — composing rules
   distance of "0" between two separate voices (known as "perfect unison") can
   be categorized as such by the user through this setting. Fewer levels may be
   more appropriate for simpler scales, while more levels may be suitable for
-  complex scales. Possible consonant/dissonant extensions may include
-  "mandatory" and "prohibited". Any note outside the scale is considered
-  dissonant and can only be used if
-    - A "Transpose Level" is set
-    - "Leading Tones Allowance" is set
-    or at least any one of the above
+  complex scales. Available levels are:
+  - Mandatory: Must be present in every harmony
+  - Perfect Consonant: Will be the last to change, unless in the voice assigned
+    as "Volunteer"
+  - (Imperfect) Consonant: Has no active tendency to move, unless in the voice
+    assigned as "Volunteer"
+  - (Mild) Dissonant: Has a tendency to move
+  - Strong Dissonant: Has a strong tendency to move and will be the first to
+    change
+  - Prohibited: Is forbidden in every harmony
+  Any note outside the scale is considered dissonant and can only be used if
+  - A "Transpose Rate" is set
+  - "Leading Tones Allowance" is set
+  or at least any one of the above
 - Set the "Dissonance Level Range": Set between which minimum and maximum the
   dissonance of the harmonies must stay. Minimum dissonance equals maximum
   consonance. Takes into account the "Levels of Consonance and Dissonance".
