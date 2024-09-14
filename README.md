@@ -66,10 +66,8 @@ at a minimum:
   "Endpoint Skip Horizontal Rate", like initiating a new melody.
   - manually through a text prompt
   - by importing it from a .ly-file. Only the first melody statement is used
-    and may contain only single notes: no chords
-    <code>\<\></code>
-    and no polyphony
-    <code>\<\<{\}\/\/\{\}\>\></code>
+    and may contain only single notes: no chords <code>\<\></code> and no
+    polyphony <code>\<\<{\}\/\/\{\}\>\></code>.
 - Set the "Vertical Rate": This refers to how many voices are playing
   simultaneously. Voices are referred to as "Voice" rather than "Instrument",
   "Line" or "Staff" (or any other terminology).
