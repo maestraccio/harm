@@ -59,12 +59,12 @@ criteria, while still adhering to the same — yet adaptable — composing rules
   <li>
     Insert a "Melody": Users can input a single melody line with a time
     signature and at least one note and one ore more optional "Endpoint"
-    markings, in Lilypond absolute syntax, like <br> <code>\{\\time 3/4 a'4 b'8
-    cis''8 d''4 \\bar "." f''2.\}</code><br> where every extra <code>\\bar
-    \".\"</code> or doubled bar line indicates an "Endpoint". After an
-    "Endpoint", all voices are a "one-time volunteer", where a completely new
-    harmony is set up, to initiate a new sequence after the "Endpoint Skip
-    Horizontal Rate", like initiating a new melody.
+    markings, in Lilypond absolute syntax, like<br>
+    <code>\{\\time 3/4 a'4 b'8 cis''8 d''4 \\bar "." f''2.\}</code><br>
+    where every extra <code>\\bar \".\"</code> or doubled bar line indicates an
+    "Endpoint". After an "Endpoint", all voices are a "one-time volunteer",
+    where a completely new harmony is set up, to initiate a new sequence after
+    the "Endpoint Skip Horizontal Rate", like initiating a new melody.
     <ul>
       <li>
         manually through a text prompt
