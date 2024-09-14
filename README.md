@@ -144,7 +144,7 @@ criteria, while still adhering to the same — yet adaptable — composing rules
   - (Mild) Dissonant: Has a tendency to move
   - Strong Dissonant: Has a strong tendency to move and will be the first to
     change
-  - Prohibited: Is forbidden in every harmony
+  - Prohibited: Is forbidden in every harmony<br>
   Any note outside the scale is considered dissonant and can only be used if
   - A "Transpose Rate" is set
   - "Leading Tones Allowance" is set
