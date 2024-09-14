@@ -120,6 +120,9 @@ criteria, while still adhering to the same — yet adaptable — composing rules
           <li>
             Jump to "Leading Tone"
           </li>
+          <li>
+            Jump to any note, only if "Transpose Rate" is set
+          </li>
         </ul>
       </li>
       <li>
@@ -147,29 +150,59 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     </ul>
   </li>
   <li>
-    - Set "Melody As Other Voice": Use the melody not as the highest voice but as
-      another voice of choice, as part of the ensemble. All other voices go around
-      or on top of the melody instead of below.
-      - Choose one other voice to assign the melody to
-        - Octaving option to fit in voice range
+    Set "Melody As Other Voice": Use the melody not as the highest voice but as
+    another voice of choice, as part of the ensemble. All other voices go around
+    or on top of the melody instead of below.
+    <ul>
+      <li>
+        Choose one other voice to assign the melody to
+        <ul>
+          <li>
+            <ul>
+              <li>
+                Octaving option to fit in voice range
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
     - Set "Protagonist": if the melody voice stands out as a soloist and does not
       take part in de ensemble that form the harmony. If this option is chosen, the
       "Protagonist" can also be silent for the duration of the "melody" ("tacet al
       fine" in WCM), to create a random series of harmonies, yet following the
       settings.
-    - Set the "Voice Crossing Allowance": Users can specify whether voices are
-      permitted to cross each other or if their ranges are constrained by
-      surrounding voices.
-      - "Yes"
-      - "No"
-    - Set the "Repetition Rate": Prevent repeated equal movements, for instance if
-      the "Volunteer" initiates a dissonant harmony that they resolve themselves,
-      after which they are assumed to move to another dissonant again.
-      - "Off": The "Volunteer" can move back to the same previous dissonant and
+  </li>
+  <li>
+    Set the "Voice Crossing Allowance": Users can specify whether voices are
+    permitted to cross each other or if their ranges are constrained by
+    surrounding voices.
+    <ul>
+      <li>
+        "Yes"
+      </li>
+      <li>
+        "No"
+      </li>
+    </ul>
+  </li>
+  <li>
+    Set the "Repetition Rate": Prevent repeated equal movements, for instance if
+    the "Volunteer" initiates a dissonant harmony that they resolve themselves,
+    after which they are assumed to move to another dissonant again.
+    <ul>
+      <li>
+        "Off": The "Volunteer" can move back to the same previous dissonant and
         perform the same resolution again, over and over, until the melody moves
         and forces a different decision.
-      - "On": Set a number of maximum repetitions before the "Volunteer" must
+      </li>
+      <li>
+        "On": Set a number of maximum repetitions before the "Volunteer" must
         decide on another dissonant to move to.
+      </li>
+    </ul>
   </li>
 </ul>
 
