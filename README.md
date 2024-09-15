@@ -1,11 +1,11 @@
-# harm
-### Harm: A Counter-Traditional Harmonizing Program
+<h1>harm</h1>
+<h3>Harm: A Counter-Traditional Harmonizing Program</h3>
 "Harmonies" are conventionally defined in Western Classical Music theory (here
 abbreviated as WCM) as "simultaneously sounding tones in a harmonious manner".
 This definition raises at least two questions: What exactly constitutes a
 "tone," and what qualifies as "harmoniously"?
 
-#### 1. Tone:
+<h3>1. Tone:</h3>
 Sound is defined as the "audible movement of air". A "tone", in contrast,
 refers to "sound at a measurable frequency". For practical reasons, "harm" will
 utilize the commonly accepted twelve-semitone/chromatic evenly divided (or
@@ -21,7 +21,7 @@ necessary starting point. While the word "Tone" indicates the actual sound, the
 word "Note" is used for the representation of that tone, either on paper or in
 the programming code.
 
-#### 2. Harmony:
+<h3>2. Harmony:</h3>
 The concept of what is considered "harmoniously" is influenced by tradition,
 culture, and personal taste, while also being rooted in natural harmonics.
 Different musical styles may perceive various combinations as more consonant
@@ -41,7 +41,7 @@ where octaving transforms one or more consonants into dissonants) are perceived
 as less consonant/tonic in WCM due to the natural laws governing sound
 transmission through air.
 
-#### BUT:
+<h3>BUT:</h3>
 What if these overtones were not consonant? For example, if they were carried
 through a medium other than air, such as a different gas or liquid? Consider a
 straight stick partially submerged in water; the part below the surface appears
@@ -52,9 +52,9 @@ idea of breaking free from the constraints of nature and creating new harmonies
 using the twelve available tones, defined by user-inputted consonant/dissonant
 criteria, while still adhering to the same — yet adaptable — composing rules.
 
-## In the new program "harm", users must be able to perform the following actions at a minimum:
+<h2>In the new program "harm", users must be able to perform the following actions at a minimum:</h2>
 
-#### Base Material:
+<h3>Base Material:</h3>
 <ul>
   <li>
     Insert a "Melody": Users can input a single melody line with a time
@@ -206,7 +206,7 @@ criteria, while still adhering to the same — yet adaptable — composing rules
   </li>
 </ul>
 
-#### Tonal Environment:
+<h3>Tonal Environment:</h3>
 <ul>
   <li>
     Set the "Scale and Fundamental": Traditionally, WCM scales consist of seven
@@ -349,46 +349,70 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     crossing, a relevant error should be raised.
   </li>
 </ul>
-#### Single-voice Variables:
-- Set the "Voice Range" of each voice: This setting is necessary to prevent all
-  voices from becoming overly cluttered together.
-- Set the "Jump": Users can define how far a single voice is allowed to jump up
-  or down (crossing more than one scale note) and whether it can transition to
-  a consonant or dissonant interval (and to what level) from either a consonant
-  or dissonant interval. The voice must obviously remain within its defined
-  range.
-- Set "Leading Tones Allowance": Set a minimum/maximum of "Leading Tones": Use
-  a note that is outside the selected scale to resolve by a half-step to a
-  scale note, upwards, downwards, or both.
-- Set the "Note Repetition": Set if a non-changing note is repeated in the next
-  harmony, is tied, is a Rest (if allowed), or influenced by the "Rate of
-  Simultaneous Movements".
-- Set the "Rest Allowance": Define if a voice should always play a note, or if
-  and how many rests are allowed.
-- Set "Voice Exceptions": Define specific exceptions for a specific voice, like
-  "Drone" for one note only for the whole melody or until an endpoint is
-  reached, "Jumpy" for extra movement, "Walking", etc. where for every
-  exception set specific variables can be defined. Applies in WCM mostly to the
-  lowest (bass) voice, but can in "harm" be assigned to any voice. Suggested
-  names are being evaluated.
 
-#### Multi-voice Variables:
-- Set "Dissonant Resolutions": In WCM, one of the notes in a dissonant interval
-  typically resolves downward into an imperfectly consonant interval. "harm"
-  users must decide whether a dissonant note should resolve upwards or
-  downwards into another interval, or not, and indicate whether that interval
-  is or may be consonant or dissonant and to which level. This setting leads
-  primarily the generation of the next harmony, other variables/restrictions
-  are considered later on in this process.
-- Set the "Interval Parallels Allowance": In WCM, the use of "perfect octave"
-  and "perfect fifth" parallels is generally discouraged, and "dissonant"
-  parallels are considered problematic. Users can specify which parallels are
-  allowed or forbidden.
-- Set the "Rate of Simultaneous Movements": The minimum value is "1", allowing
-  only one note to transition to a new note, with dissonants taking precedence
-  over consonants, based on their dissonance level. The maximum value is "0",
-  where all voices can move at the same time. This value must never exceed the
-  "vertical rate".
+<h3>Single-voice Variables:</h3>
+
+<ul>
+  <li>
+    Set the "Voice Range" of each voice: This setting is necessary to prevent all
+    voices from becoming overly cluttered together.
+  </li>
+  <li>
+    Set the "Jump": Users can define how far a single voice is allowed to jump up
+    or down (crossing more than one scale note) and whether it can transition to
+    a consonant or dissonant interval (and to what level) from either a consonant
+    or dissonant interval. The voice must obviously remain within its defined
+    range.
+  </li>
+  <li>
+    Set "Leading Tones Allowance": Set a minimum/maximum of "Leading Tones": Use
+    a note that is outside the selected scale to resolve by a half-step to a
+    scale note, upwards, downwards, or both.
+  </li>
+  <li>
+    Set the "Note Repetition": Set if a non-changing note is repeated in the next
+    harmony, is tied, is a Rest (if allowed), or influenced by the "Rate of
+    Simultaneous Movements".
+  </li>
+  <li>
+    Set the "Rest Allowance": Define if a voice should always play a note, or if
+    and how many rests are allowed.
+  </li>
+  <li>
+    Set "Voice Exceptions": Define specific exceptions for a specific voice, like
+    "Drone" for one note only for the whole melody or until an endpoint is
+    reached, "Jumpy" for extra movement, "Walking", etc. where for every
+    exception set specific variables can be defined. Applies in WCM mostly to the
+    lowest (bass) voice, but can in "harm" be assigned to any voice. Suggested
+    names are being evaluated.
+  </li>
+</ul>
+
+<h3>Multi-voice Variables:</h3>
+<ul>
+  <li>
+    Set "Dissonant Resolutions": In WCM, one of the notes in a dissonant interval
+    typically resolves downward into an imperfectly consonant interval. "harm"
+    users must decide whether a dissonant note should resolve upwards or
+    downwards into another interval, or not, and indicate whether that interval
+    is or may be consonant or dissonant and to which level. This setting leads
+    primarily the generation of the next harmony, other variables/restrictions
+    are considered later on in this process.
+  </li>
+  <li>
+    Set the "Interval Parallels Allowance": In WCM, the use of "perfect octave"
+    and "perfect fifth" parallels is generally discouraged, and "dissonant"
+    parallels are considered problematic. Users can specify which parallels are
+    allowed or forbidden.
+  </li>
+  <li>
+    Set the "Rate of Simultaneous Movements": The minimum value is "1", allowing
+    only one note to transition to a new note, with dissonants taking precedence
+    over consonants, based on their dissonance level. The maximum value is "0",
+    where all voices can move at the same time. This value must never exceed the
+    "vertical rate".
+  </li>
+</ul>
 
 The program must facilitate the input of a melody along with its time unit
 using basic Lilypond syntax. It should generate a harmonic "accompaniment" in
