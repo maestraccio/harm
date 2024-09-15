@@ -207,79 +207,148 @@ criteria, while still adhering to the same — yet adaptable — composing rules
 </ul>
 
 #### Tonal Environment:
-- Set the "Scale and Fundamental": Traditionally, WCM scales consist of seven
-  notes, with some exceptions. In "harm", users can choose between three to
-  twelve notes to create a scale that repeats in every octave, similar to WCM.
-  The term "Scale" will be used instead of "tonality" or any other term. The
-  "Scale" does not need to contain only melody notes if a "Transpose Rate" or
-  "Leading Tones Allowance" is set, otherwise at some point an error will be
-  raised. The choice of a "Fundamental" is optional.
-  - Choose three to twelve notes in a one-octave range (from twelve semitones),
-    which are to be considered the "Scale".
-  - Optionally choose a "Fundamental", to define a bass note with a
-    corresponding consonant harmony for "Endpoint". The "Fundamental" will
-    follow the "Transpose Rate", if set.
-- Set "Levels of Consonance and Dissonance": Users will specify which intervals
-  in the scale are considered consonant (stable: no tendency to resolve) and
-  which are deemed dissonant (unstable: tendency to resolve). WCM recognizes
-  four levels: perfect consonance, imperfect consonance, dissonance, and strong
-  dissonance. A single note is never classified as dissonant; however, a
-  distance of "0" between two separate voices (known as "perfect unison") can
-  be categorized as such by the user through this setting. Fewer levels may be
-  more appropriate for simpler scales, while more levels may be suitable for
-  complex scales. Available levels are:
-  - Mandatory: Must be present in every harmony
-  - Perfect Consonant: Will be the last to change, unless in the voice assigned
-    as "Volunteer"
-  - (Imperfect) Consonant: Has no active tendency to move, unless in the voice
-    assigned as "Volunteer"
-  - (Mild) Dissonant: Has a tendency to move
-  - Strong Dissonant: Has a strong tendency to move and will be the first to
-    change
-  - Prohibited: Is forbidden in every harmony<br>
-  Any note outside the scale is considered dissonant and can only be used if
-  - A "Transpose Rate" is set
-  - "Leading Tones Allowance" is set
-  or at least any one of the above
-- Set the "Dissonance Level Range": Set between which minimum and maximum the
-  dissonance of the harmonies must stay. Minimum dissonance equals maximum
-  consonance. Takes into account the "Levels of Consonance and Dissonance".
-- Set the "Endpoint Dissonance Level": Users can determine how dissonant a
-  resolution can be for it to be considered an "endpoint". Takes into account
-  the "Levels of Consonance and Dissonance".
-- Set the "Transpose Rate": This setting specifies whether the entire tonal
-  environment can shift to a different scale with the same structure. This
-  option may be necessary if the provided melody includes notes that are not
-  represented by the chosen scale and their movement cannot be solved with
-  "Leading Tones Allowance". It can also just enrich the harmonic outcome.
-  Options may include
-  - to a "perfect consonant" interval (which is the most common approach in
-    WCM) from the first "Scale" only. The last "Scale" to use must equal the
-    first, so if used, it must also go back again.
-  - to one or more chosen scale note(s)
-    - from the first "Scale" only
-    - set a maximum number of levels
-    - set if the last "Scale" to use must equal the first
-  - to any note, even outside the "Scale"
-    - from the first "Scale" only
-    - set a maximum number of levels
-    - set if the last "Scale" to use must equal the first
-  - none at all
-  The Transposision Rate is entered as an interval up or down.
-- Set the "Horizontal Rate": This setting determines how many changes are
-  permitted or mandatory per time unit. The time unit is defined by the user
-  provided Lilypond fragment (or potentially by "mel" in the future). The
-  "mandatory" setting governs continuous harmonic movement if the melody note
-  remains unchanged. In "Choral mode", the harmony is adjusted only with each
-  change in the melody note.
-- Set the "Endpoint Skip Horizontal Rate": When a (consonant) "Endpoint" is
-  reached, wait longer before the next change, initiated by the "Volunteer".
-- Set the "Start and Endpoint": Define if the first and/or last harmony should
-  have a predefined bass note, stucture, or not. If set, to the affected
-  voice(s), a starting and/or an ending note must be assigned in absolute
-  Lilypond syntax. If "Voice Crossing Allowance" is "OFF" and given notes are
-  crossing, a relevant error should be raised.
-
+<ul>
+  <li>
+    Set the "Scale and Fundamental": Traditionally, WCM scales consist of seven
+    notes, with some exceptions. In "harm", users can choose between three to
+    twelve notes to create a scale that repeats in every octave, similar to WCM.
+    The term "Scale" will be used instead of "tonality" or any other term. The
+    "Scale" does not need to contain only melody notes if a "Transpose Rate" or
+    "Leading Tones Allowance" is set, otherwise at some point an error will be
+    raised. The choice of a "Fundamental" is optional.
+    <ul>
+      <li>
+        Choose three to twelve notes in a one-octave range (from twelve semitones),
+        which are to be considered the "Scale".
+      </li>
+      <li>
+        Optionally choose a "Fundamental", to define a bass note with a
+        corresponding consonant harmony for "Endpoint". The "Fundamental" will
+        follow the "Transpose Rate", if set.
+      </li>
+    </ul>
+  </li>
+  <li>
+    Set "Levels of Consonance and Dissonance": Users will specify which intervals
+    in the scale are considered consonant (stable: no tendency to resolve) and
+    which are deemed dissonant (unstable: tendency to resolve). WCM recognizes
+    four levels: perfect consonance, imperfect consonance, dissonance, and strong
+    dissonance. A single note is never classified as dissonant; however, a
+    distance of "0" between two separate voices (known as "perfect unison") can
+    be categorized as such by the user through this setting. Fewer levels may be
+    more appropriate for simpler scales, while more levels may be suitable for
+    complex scales. Available levels are:
+    <ul>
+      <li>
+        Mandatory: Must be present in every harmony
+      </li>
+      <li>
+        Perfect Consonant: Will be the last to change, unless in the voice assigned
+        as "Volunteer"
+      </li>
+      <li>
+        (Imperfect) Consonant: Has no active tendency to move, unless in the voice
+        assigned as "Volunteer"
+      </li>
+      <li>
+        (Mild) Dissonant: Has a tendency to move
+      </li>
+      <li>
+        Strong Dissonant: Has a strong tendency to move and will be the first to
+        change
+      </li>
+      <li>
+        Prohibited: Is forbidden in every harmony
+      </li>
+    </ul>
+    Any note outside the scale is considered dissonant and can only be used if
+    <ul>
+      <li>
+        A "Transpose Rate" is set
+      </li>
+      <li>
+        "Leading Tones Allowance" is set
+      </li>
+    </ul>
+    or at least any one of the above
+  </li>
+  <li>
+    Set the "Dissonance Level Range": Set between which minimum and maximum the
+    dissonance of the harmonies must stay. Minimum dissonance equals maximum
+    consonance. Takes into account the "Levels of Consonance and Dissonance".
+  </li>
+  <li>
+    Set the "Endpoint Dissonance Level": Users can determine how dissonant a
+    resolution can be for it to be considered an "endpoint". Takes into account
+    the "Levels of Consonance and Dissonance".
+  </li>
+  <li>
+    Set the "Transpose Rate": This setting specifies whether the entire tonal
+    environment can shift to a different scale with the same structure. This
+    option may be necessary if the provided melody includes notes that are not
+    represented by the chosen scale and their movement cannot be solved with
+    "Leading Tones Allowance". It can also just enrich the harmonic outcome.
+    Options may include
+    <ul>
+      <li>
+        to a "perfect consonant" interval (which is the most common approach in
+        WCM) from the first "Scale" only. The last "Scale" to use must equal the
+        first, so if used, it must also go back again.
+      </li>
+      <li>
+        to one or more chosen scale note(s)
+        <ul>
+          <li>
+            from the first "Scale" only
+          </li>
+          <li>
+            set a maximum number of levels
+          </li>
+          <li>
+            set if the last "Scale" to use must equal the first
+          </li>
+        </ul>
+      </li>
+      <li>
+        to any note, even outside the "Scale"
+        <ul>
+          <li>
+            from the first "Scale" only
+          </li>
+          <li>
+            set a maximum number of levels
+          </li>
+          <li>
+            set if the last "Scale" to use must equal the first
+          </li>
+        </ul>
+      </li>
+      <li>
+        none at all
+      </li>
+    </ul>
+    The "Transpose Rate" is entered as an interval up or down.
+  </li>
+  <li>
+    Set the "Horizontal Rate": This setting determines how many changes are
+    permitted or mandatory per time unit. The time unit is defined by the user
+    provided Lilypond fragment (or potentially by "mel" in the future). The
+    "mandatory" setting governs continuous harmonic movement if the melody note
+    remains unchanged. In "Choral mode", the harmony is adjusted only with each
+    change in the melody note.
+  </li>
+  <li>
+    Set the "Endpoint Skip Horizontal Rate": When a (consonant) "Endpoint" is
+    reached, wait longer before the next change, initiated by the "Volunteer".
+  </li>
+  <li>
+    Set the "Start and Endpoint": Define if the first and/or last harmony should
+    have a predefined bass note, stucture, or not. If set, to the affected
+    voice(s), a starting and/or an ending note must be assigned in absolute
+    Lilypond syntax. If "Voice Crossing Allowance" is "OFF" and given notes are
+    crossing, a relevant error should be raised.
+  </li>
+</ul>
 #### Single-voice Variables:
 - Set the "Voice Range" of each voice: This setting is necessary to prevent all
   voices from becoming overly cluttered together.
