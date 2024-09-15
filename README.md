@@ -336,10 +336,33 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     "mandatory" setting governs continuous harmonic movement if the melody note
     remains unchanged. In "Choral mode", the harmony is adjusted only with each
     change in the melody note.
+    <ul>
+      <li>
+        "1 Per Beat": Set a mandatory change on every beat, indicated by the
+        lower time signature number.
+      </li>
+      <li>
+        "1 Per Measure": Set a mandatory change on every measure, indicated by
+        the lower time signature number multiplied by the upper.
+      </li>
+      <li>
+        "Every # Beats": Set a mandatory change on every "# Beats", indicated
+        by the lower time signature number multiplied by a user inputted
+        number.
+      </li>
+    </ul>
+    If more changes per beat are wanted, change the time signature of the
+    melody accordingly.
   </li>
   <li>
     Set the "Endpoint Skip Horizontal Rate": When a (consonant) "Endpoint" is
     reached, wait longer before the next change, initiated by the "Volunteer".
+    <ul>
+      <li>
+        "# Beats": Set a number of beats, indicated by the lower time signature
+        number.
+      </li>
+    </ul>
   </li>
   <li>
     Set the "Start and Endpoint": Define if the first and/or last harmony should
@@ -347,6 +370,29 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     voice(s), a starting and/or an ending note must be assigned in absolute
     Lilypond syntax. If "Voice Crossing Allowance" is "OFF" and given notes are
     crossing, a relevant error should be raised.
+    <ul>
+      <li>
+        "Start Harmony Dissonance": Set how dissonant a starting harmony must
+        be.
+      </li>
+      <li>
+        "Starting Harmony": Set an absolute starting harmony by defining every
+        starting note for each voice.
+      </li>
+      <li>
+        "Start Bass Note": Set only on which bass note the sequence must start.
+      </li>
+      <li>
+        "End Harmony Dissonance": Set how dissonant an ending harmony must be.
+      </li>
+      <li>
+        "Ending Harmony": Set an absolute ending harmony by defining every
+        ending note for each voice.
+      </li>
+      <li>
+        "End Bass Note": Set only on which bass note the sequence must end.
+      </li>
+    </ul>
   </li>
 </ul>
 
@@ -356,6 +402,10 @@ criteria, while still adhering to the same — yet adaptable — composing rules
   <li>
     Set the "Voice Range" of each voice: This setting is necessary to prevent all
     voices from becoming overly cluttered together.
+    <ul>
+      <li>
+      </li>
+    </ul>
   </li>
   <li>
     Set the "Jump": Users can define how far a single voice is allowed to jump up
@@ -363,20 +413,36 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     a consonant or dissonant interval (and to what level) from either a consonant
     or dissonant interval. The voice must obviously remain within its defined
     range.
+    <ul>
+      <li>
+      </li>
+    </ul>
   </li>
   <li>
     Set "Leading Tones Allowance": Set a minimum/maximum of "Leading Tones": Use
     a note that is outside the selected scale to resolve by a half-step to a
     scale note, upwards, downwards, or both.
+    <ul>
+      <li>
+      </li>
+    </ul>
   </li>
   <li>
     Set the "Note Repetition": Set if a non-changing note is repeated in the next
     harmony, is tied, is a Rest (if allowed), or influenced by the "Rate of
     Simultaneous Movements".
+    <ul>
+      <li>
+      </li>
+    </ul>
   </li>
   <li>
     Set the "Rest Allowance": Define if a voice should always play a note, or if
     and how many rests are allowed.
+    <ul>
+      <li>
+      </li>
+    </ul>
   </li>
   <li>
     Set "Voice Exceptions": Define specific exceptions for a specific voice, like
@@ -385,6 +451,10 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     exception set specific variables can be defined. Applies in WCM mostly to the
     lowest (bass) voice, but can in "harm" be assigned to any voice. Suggested
     names are being evaluated.
+    <ul>
+      <li>
+      </li>
+    </ul>
   </li>
 </ul>
 
@@ -398,12 +468,20 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     is or may be consonant or dissonant and to which level. This setting leads
     primarily the generation of the next harmony, other variables/restrictions
     are considered later on in this process.
+    <ul>
+      <li>
+      </li>
+    </ul>
   </li>
   <li>
     Set the "Interval Parallels Allowance": In WCM, the use of "perfect octave"
     and "perfect fifth" parallels is generally discouraged, and "dissonant"
     parallels are considered problematic. Users can specify which parallels are
     allowed or forbidden.
+    <ul>
+      <li>
+      </li>
+    </ul>
   </li>
   <li>
     Set the "Rate of Simultaneous Movements": The minimum value is "1", allowing
@@ -411,6 +489,10 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     over consonants, based on their dissonance level. The maximum value is "0",
     where all voices can move at the same time. This value must never exceed the
     "vertical rate".
+    <ul>
+      <li>
+      </li>
+    </ul>
   </li>
 </ul>
 
