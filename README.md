@@ -19,7 +19,8 @@ arbitrary. To minimize confusion, every "black key" is always considered a
 letter. While this naming method is still being explored, it provides a
 necessary starting point. While the word "Tone" indicates the actual sound, the
 word "Note" is used for the representation of that tone, either on paper or in
-the programming code.
+the programming code. As "harm" will not produce sound, the term "note" is used
+here.
 
 <h3>2. Harmony:</h3>
 The concept of what is considered "harmoniously" is influenced by tradition,
@@ -647,6 +648,20 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     are considered later on in this process.
     <ul>
       <li>
+        "Up":
+        <ul>
+          <li>
+            "{_defined-dissonance-or-consonance-level-here_}"
+          </li>
+        </ul>
+      </li>
+      <li>
+        "Down":
+        <ul>
+          <li>
+            "{_defined-dissonance-or-consonance-level-here_}"
+          </li>
+        </ul>
       </li>
     </ul>
   </li>
@@ -657,17 +672,31 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     allowed or forbidden.
     <ul>
       <li>
+        "Yes":
+        <ul>
+          <li>
+            "Maximum Consonance": Set the maximum conconance level. Standard
+            WCM defines "Imperfect Consonant".
+          </li>
+          <li>
+            "Maximum Dissonance": Set the maximum disconance level. Standard
+            WCM defines "Mild Dissonant".
+          </li>
+        </ul>
+      </li>
+      <li>
+        "No"
       </li>
     </ul>
   </li>
   <li>
     Set the "Rate of Simultaneous Movements": The minimum value is "1", allowing
     only one note to transition to a new note, with dissonants taking precedence
-    over consonants, based on their dissonance level. The maximum value is "0",
-    where all voices can move at the same time. This value must never exceed the
-    "vertical rate".
+    over consonants, based on their dissonance level. The maximum value is "0"
+    (no maximum), where all voices can move at the same time.
     <ul>
       <li>
+        "_enter_a_number_": Too large numbers fall back to "0".
       </li>
     </ul>
   </li>
