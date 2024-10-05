@@ -400,21 +400,82 @@ criteria, while still adhering to the same — yet adaptable — composing rules
 
 <ul>
   <li>
-    Set the "Voice Range" of each voice: This setting is necessary to prevent all
-    voices from becoming overly cluttered together.
+    Set the "Voice Range" of each voice: This setting is useful to prevent all
+    voices from becoming overly cluttered together. It can be set to "Unlimited"
+    to override.
     <ul>
       <li>
+        "Individually": Choose a lowest and highest note for every individual
+        voice. The individual voices can be sorted/stacked manually.
+      </li>
+      <li>
+        "Preset": All voices have predefined ranges taken from the selected
+        "Preset Ensemble", or can be selected individually but immutable from a
+        drop-down list with traditional instruments.
+      </li>
+      <li>
+        "Unlimited": All voices have unlimited ranges.
       </li>
     </ul>
   </li>
   <li>
-    Set the "Jump": Users can define how far a single voice is allowed to jump up
-    or down (crossing more than one scale note) and whether it can transition to
-    a consonant or dissonant interval (and to what level) from either a consonant
-    or dissonant interval. The voice must obviously remain within its defined
-    range.
+    Set the "Jump": Users can define how far a single voice is allowed to jump 
+    up or down (crossing more than one scale note) and whether it can transition
+    to a consonant or dissonant interval (and to what level) from either a
+    consonant or dissonant interval. The voice must obviously remain within its
+    defined range. It is entered as an inclusive allowance.
     <ul>
       <li>
+        "Up": Defines the allowed jumps to a higher note
+        <ul>
+          <li>
+            "{_defined-dissonance-or-consonance-level-here_}":
+            <ul>
+              <li>
+                "Yes": Set max interval
+              </li>
+              <li>
+                "No"
+              </li>
+            </ul>
+          </li>
+          <li>
+            "{_defined-dissonance-or-consonance-level-here_}":
+            <ul>
+              <li>
+                "Yes": Set max interval
+              </li>
+              <li>
+                "No"
+              </li>
+            </ul>
+          </li>
+        </ul>
+        "Down": Defines the allowed jump to a lower note
+        <ul>
+          <li>
+            "{_defined-dissonance-or-consonance-level-here_}":
+            <ul>
+              <li>
+                "Yes": Set max interval
+              </li>
+              <li>
+                "No"
+              </li>
+            </ul>
+          </li>
+          <li>
+            "{_defined-dissonance-or-consonance-level-here_}":
+            <ul>
+              <li>
+                "Yes": Set max interval
+              </li>
+              <li>
+                "No"
+              </li>
+            </ul>
+          </li>
+        </ul>
       </li>
     </ul>
   </li>
@@ -424,15 +485,62 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     scale note, upwards, downwards, or both.
     <ul>
       <li>
+        "Lead Up":
+        <ul>
+          <li>
+            "Yes":
+            <ul>
+              <li>
+                "Horizontal Number": Set max number of optional occurrences per voice.
+              </li>
+              <li>
+                "Vertical Number": Set max number of optional parallel
+                occurrences over multiple voices. This number can never exceed
+                the maximum number of voices.
+              </li>
+              <li>
+                "No"
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        "Lead Down":
+        <ul>
+          <li>
+            "Yes":
+            <ul>
+              <li>
+                "Horizontal Number": Set max number of optional occurrences per voice.
+              </li>
+              <li>
+                "Vertical Number": Set max number of optional parallel
+                occurrences over multiple voices. This number can never exceed
+                the maximum number of voices.
+              </li>
+              <li>
+                "No"
+              </li>
+            </ul>
+          </li>
+        </ul>
       </li>
     </ul>
   </li>
   <li>
-    Set the "Note Repetition": Set if a non-changing note is repeated in the next
-    harmony, is tied, is a Rest (if allowed), or influenced by the "Rate of
-    Simultaneous Movements".
+    Set the "Note Repetition": Set if a non-changing note is
+    repeated/played/struck in the next harmony, is tied, is a Rest (if allowed),
+    or influenced by the "Rate of Simultaneous Movements".
     <ul>
       <li>
+        "Tie": Hold the note as long as possible
+      </li>
+      <li>
+        "Repeat": Play the note again in every new harmony where it occurs
+      </li>
+      <li>
+        "Rest": Don't play the note again but "play" one rest instead.
       </li>
     </ul>
   </li>
@@ -441,6 +549,57 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     and how many rests are allowed.
     <ul>
       <li>
+        "Yes":
+        <ul>
+          <li>
+            "Max Horizontal Number": Set after how many rests a note must be
+            played
+          </li>
+          <li>
+            "Max Vertical Number": Set how many voices can "play" a rest at the
+            same time
+          </li>
+        </ul>
+        "After Rest": Set what type of note must be played after a rest:
+        <ul>
+          <li>
+            "Step Up": Choose a note one step higher than the last played note
+            <ul>
+              <li>
+                "{_defined-dissonance-or-consonance-level-here_}"
+              </li>
+            </ul>
+          </li>
+          <li>
+            "Jump Up": Choose a note one jump higher than the last played note.
+            This can also be a step.
+            <ul>
+              <li>
+                "{_defined-dissonance-or-consonance-level-here_}"
+              </li>
+            </ul>
+          </li>
+          <li>
+            "Step Down": Choose a note one step lower than the last played note
+            <ul>
+              <li>
+                "{_defined-dissonance-or-consonance-level-here_}"
+              </li>
+            </ul>
+          </li>
+          <li>
+            "Jump Down": Choose a note one jump lower than the last played
+            note. This can also be a step.
+            <ul>
+              <li>
+                "{_defined-dissonance-or-consonance-level-here_}"
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        "No"
       </li>
     </ul>
   </li>
