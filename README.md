@@ -621,11 +621,28 @@ criteria, while still adhering to the same — yet adaptable — composing rules
           </li>
           <li>
             "Walking": Play only notes that are one step away from each other
-            on every beat
+            on:
+            <ul>
+              <li>
+                "Beat": Every beat a new note
+              </li>
+              <li>
+                "Division": Set a division to play a new note on every division
+                or multiplication of a beat
+              </li>
+            </ul>
           </li>
           <li>
-            "Jumpy": Play only notes that are one jump away from each other on
-            every beat
+            "Jumpy": Play only notes that are one jump away from each other on:
+            <ul>
+              <li>
+                "Beat": Every beat a new note
+              </li>
+              <li>
+                "Division": Set a division to play a new note on every division
+                or multiplication of a beat
+              </li>
+            </ul>
           </li>
           <li>
             "_other_suggestions_welcome_"
