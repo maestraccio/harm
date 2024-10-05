@@ -498,10 +498,10 @@ criteria, while still adhering to the same — yet adaptable — composing rules
                 occurrences over multiple voices. This number can never exceed
                 the maximum number of voices.
               </li>
-              <li>
-                "No"
-              </li>
             </ul>
+          </li>
+          <li>
+            "No"
           </li>
         </ul>
       </li>
@@ -519,10 +519,10 @@ criteria, while still adhering to the same — yet adaptable — composing rules
                 occurrences over multiple voices. This number can never exceed
                 the maximum number of voices.
               </li>
-              <li>
-                "No"
-              </li>
             </ul>
+          </li>
+          <li>
+            "No"
           </li>
         </ul>
       </li>
@@ -612,6 +612,24 @@ criteria, while still adhering to the same — yet adaptable — composing rules
     names are being evaluated.
     <ul>
       <li>
+        Assign a special rule to one or more voices:
+        <ul>
+          <li>
+            "Drone": Play only one note throughout the melody until an
+            "Endpoint" is reached
+          </li>
+          <li>
+            "Walking": Play only notes that are one step away from each other
+            on every beat
+          </li>
+          <li>
+            "Jumpy": Play only notes that are one jump away from each other on
+            every beat
+          </li>
+          <li>
+            "_other_suggestions_welcome_"
+          </li>
+        </ul>
       </li>
     </ul>
   </li>
