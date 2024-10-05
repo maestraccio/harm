@@ -35,12 +35,12 @@ lower overtones in air-carried sounds, such as the "perfect fifth" (third
 overtone) and the "major third" (fifth overtone). It is important to note that
 the second and fourth overtones are octaves of the fundamental, resulting in
 [1, (2,) 3, (4,) 5], which is identified as "tonic" or "root". For example, in
-the combination <code><c e g></code>, <code><c></code> serves as the
-fundamental, <code><e></code> represents the fifth overtone transposed two
-octaves down, and <code><g></code> is the third overtone transposed one octave
-down. Any other combinations of tones (or situations where octaving transforms
-one or more consonants into dissonants) are perceived as less consonant/tonic
-in WCM due to the natural laws governing sound transmission through air.
+the combination &lt;c e g&gt;, &lt;c&gt; serves as the fundamental, &lt;e&gt;
+represents the fifth overtone transposed two octaves down, and &lt;g&gt; is the
+third overtone transposed one octave down. Any other combinations of tones (or
+situations where octaving transforms one or more consonants into dissonants)
+are perceived as less consonant/tonic in WCM due to the natural laws governing
+sound transmission through air.
 
 <h3>BUT:</h3>
 What if these overtones were not consonant? For example, if they were carried
